@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE5C12232484671F00B888B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12222484671F00B888B0 /* AppDelegate.swift */; };
+		AE5C12252484671F00B888B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12242484671F00B888B0 /* SceneDelegate.swift */; };
+		AE5C12272484671F00B888B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12262484671F00B888B0 /* ContentView.swift */; };
+		AE5C12292484672000B888B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5C12282484672000B888B0 /* Assets.xcassets */; };
+		AE5C122C2484672000B888B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5C122B2484672000B888B0 /* Preview Assets.xcassets */; };
+		AE5C122F2484672000B888B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5C122D2484672000B888B0 /* LaunchScreen.storyboard */; };
+		AE8EF9C62484715A001AC224 /* PersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF9C52484715A001AC224 /* PersonalView.swift */; };
+		AE8EF9C8248471CE001AC224 /* MedicineOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF9C7248471CE001AC224 /* MedicineOrderView.swift */; };
+		AE8EF9CA2484721D001AC224 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF9C92484721D001AC224 /* ChatView.swift */; };
+		AE8EF9CC248472B8001AC224 /* AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF9CB248472B8001AC224 /* AppointmentsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE5C121F2484671F00B888B0 /* ProHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5C12222484671F00B888B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE5C12242484671F00B888B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE5C12262484671F00B888B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AE5C12282484672000B888B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE5C122B2484672000B888B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AE5C122E2484672000B888B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE5C12302484672000B888B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE8EF9C52484715A001AC224 /* PersonalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalView.swift; sourceTree = "<group>"; };
+		AE8EF9C7248471CE001AC224 /* MedicineOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineOrderView.swift; sourceTree = "<group>"; };
+		AE8EF9C92484721D001AC224 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		AE8EF9CB248472B8001AC224 /* AppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE5C121C2484671E00B888B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE5C12162484671E00B888B0 = {
+			isa = PBXGroup;
+			children = (
+				AE5C12212484671F00B888B0 /* ProHealth */,
+				AE5C12202484671F00B888B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE5C12202484671F00B888B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE5C121F2484671F00B888B0 /* ProHealth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE5C12212484671F00B888B0 /* ProHealth */ = {
+			isa = PBXGroup;
+			children = (
+				AE5C12222484671F00B888B0 /* AppDelegate.swift */,
+				AE5C12242484671F00B888B0 /* SceneDelegate.swift */,
+				AE5C12262484671F00B888B0 /* ContentView.swift */,
+				AE8EF9CB248472B8001AC224 /* AppointmentsView.swift */,
+				AE8EF9C92484721D001AC224 /* ChatView.swift */,
+				AE8EF9C7248471CE001AC224 /* MedicineOrderView.swift */,
+				AE8EF9C52484715A001AC224 /* PersonalView.swift */,
+				AE5C12282484672000B888B0 /* Assets.xcassets */,
+				AE5C122D2484672000B888B0 /* LaunchScreen.storyboard */,
+				AE5C12302484672000B888B0 /* Info.plist */,
+				AE5C122A2484672000B888B0 /* Preview Content */,
+			);
+			path = ProHealth;
+			sourceTree = "<group>";
+		};
+		AE5C122A2484672000B888B0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AE5C122B2484672000B888B0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE5C121E2484671E00B888B0 /* ProHealth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE5C12332484672000B888B0 /* Build configuration list for PBXNativeTarget "ProHealth" */;
+			buildPhases = (
+				AE5C121B2484671E00B888B0 /* Sources */,
+				AE5C121C2484671E00B888B0 /* Frameworks */,
+				AE5C121D2484671E00B888B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProHealth;
+			productName = ProHealth;
+			productReference = AE5C121F2484671F00B888B0 /* ProHealth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE5C12172484671E00B888B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Aleksandr Artamonov";
+				TargetAttributes = {
+					AE5C121E2484671E00B888B0 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = AE5C121A2484671E00B888B0 /* Build configuration list for PBXProject "ProHealth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE5C12162484671E00B888B0;
+			productRefGroup = AE5C12202484671F00B888B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE5C121E2484671E00B888B0 /* ProHealth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE5C121D2484671E00B888B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE5C122F2484672000B888B0 /* LaunchScreen.storyboard in Resources */,
+				AE5C122C2484672000B888B0 /* Preview Assets.xcassets in Resources */,
+				AE5C12292484672000B888B0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE5C121B2484671E00B888B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE8EF9CC248472B8001AC224 /* AppointmentsView.swift in Sources */,
+				AE8EF9C62484715A001AC224 /* PersonalView.swift in Sources */,
+				AE5C12232484671F00B888B0 /* AppDelegate.swift in Sources */,
+				AE8EF9C8248471CE001AC224 /* MedicineOrderView.swift in Sources */,
+				AE5C12252484671F00B888B0 /* SceneDelegate.swift in Sources */,
+				AE8EF9CA2484721D001AC224 /* ChatView.swift in Sources */,
+				AE5C12272484671F00B888B0 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE5C122D2484672000B888B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE5C122E2484672000B888B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE5C12312484672000B888B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE5C12322484672000B888B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE5C12342484672000B888B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ProHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = 3G2P3D2GNR;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ProHealth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = artamonov.ProHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AE5C12352484672000B888B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ProHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = 3G2P3D2GNR;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ProHealth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = artamonov.ProHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE5C121A2484671E00B888B0 /* Build configuration list for PBXProject "ProHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5C12312484672000B888B0 /* Debug */,
+				AE5C12322484672000B888B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE5C12332484672000B888B0 /* Build configuration list for PBXNativeTarget "ProHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5C12342484672000B888B0 /* Debug */,
+				AE5C12352484672000B888B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE5C12172484671E00B888B0 /* Project object */;
+}
