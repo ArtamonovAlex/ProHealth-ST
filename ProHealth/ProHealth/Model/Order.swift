@@ -18,6 +18,13 @@ class Order : ObservableObject {
     func incrementCount(medicine: Medicine) {
         if let index = orderPositions.firstIndex(where: {$0.id == medicine.id}) {
             orderPositions[index].ammount += 1
+        } else {
+            orderPositions.append(OrderPosition(
+                id: medicine.id,
+                name: medicine.name,
+                ammount: 1,
+                price: medicine.price
+            ))
         }
     }
     
