@@ -17,6 +17,13 @@
 		AE8EF9C8248471CE001AC224 /* MedicineOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF9C7248471CE001AC224 /* MedicineOrderView.swift */; };
 		AE8EF9CA2484721D001AC224 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF9C92484721D001AC224 /* ChatView.swift */; };
 		AE8EF9CC248472B8001AC224 /* AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF9CB248472B8001AC224 /* AppointmentsView.swift */; };
+		AED832002485BAB7001C1884 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED831FF2485BAB7001C1884 /* Medicine.swift */; };
+		AED832052485BD28001C1884 /* MedicineData.json in Resources */ = {isa = PBXBuildFile; fileRef = AED832042485BD28001C1884 /* MedicineData.json */; };
+		AED832072485C1C4001C1884 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED832062485C1C4001C1884 /* Data.swift */; };
+		AED832092485C5C1001C1884 /* MedicineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED832082485C5C1001C1884 /* MedicineRow.swift */; };
+		AED8320D2485CEAA001C1884 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED8320C2485CEAA001C1884 /* Order.swift */; };
+		AED8320F2485CF08001C1884 /* OrderPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED8320E2485CF08001C1884 /* OrderPosition.swift */; };
+		AED832112485CFA5001C1884 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED832102485CFA5001C1884 /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,13 @@
 		AE8EF9C7248471CE001AC224 /* MedicineOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineOrderView.swift; sourceTree = "<group>"; };
 		AE8EF9C92484721D001AC224 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		AE8EF9CB248472B8001AC224 /* AppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsView.swift; sourceTree = "<group>"; };
+		AED831FF2485BAB7001C1884 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		AED832042485BD28001C1884 /* MedicineData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MedicineData.json; sourceTree = "<group>"; };
+		AED832062485C1C4001C1884 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		AED832082485C5C1001C1884 /* MedicineRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineRow.swift; sourceTree = "<group>"; };
+		AED8320C2485CEAA001C1884 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		AED8320E2485CF08001C1884 /* OrderPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPosition.swift; sourceTree = "<group>"; };
+		AED832102485CFA5001C1884 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,13 +78,13 @@
 		AE5C12212484671F00B888B0 /* ProHealth */ = {
 			isa = PBXGroup;
 			children = (
+				AED8320B2485CD55001C1884 /* MedicineViews */,
+				AED8320A2485CD24001C1884 /* MainViews */,
+				AED832032485BCCC001C1884 /* Resources */,
+				AED831FE2485BA83001C1884 /* Model */,
 				AE5C12222484671F00B888B0 /* AppDelegate.swift */,
 				AE5C12242484671F00B888B0 /* SceneDelegate.swift */,
 				AE5C12262484671F00B888B0 /* ContentView.swift */,
-				AE8EF9CB248472B8001AC224 /* AppointmentsView.swift */,
-				AE8EF9C92484721D001AC224 /* ChatView.swift */,
-				AE8EF9C7248471CE001AC224 /* MedicineOrderView.swift */,
-				AE8EF9C52484715A001AC224 /* PersonalView.swift */,
 				AE5C12282484672000B888B0 /* Assets.xcassets */,
 				AE5C122D2484672000B888B0 /* LaunchScreen.storyboard */,
 				AE5C12302484672000B888B0 /* Info.plist */,
@@ -85,6 +99,45 @@
 				AE5C122B2484672000B888B0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AED831FE2485BA83001C1884 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AED831FF2485BAB7001C1884 /* Medicine.swift */,
+				AED832062485C1C4001C1884 /* Data.swift */,
+				AED8320C2485CEAA001C1884 /* Order.swift */,
+				AED8320E2485CF08001C1884 /* OrderPosition.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AED832032485BCCC001C1884 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AED832042485BD28001C1884 /* MedicineData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AED8320A2485CD24001C1884 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				AE8EF9CB248472B8001AC224 /* AppointmentsView.swift */,
+				AE8EF9C92484721D001AC224 /* ChatView.swift */,
+				AE8EF9C7248471CE001AC224 /* MedicineOrderView.swift */,
+				AE8EF9C52484715A001AC224 /* PersonalView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		AED8320B2485CD55001C1884 /* MedicineViews */ = {
+			isa = PBXGroup;
+			children = (
+				AED832082485C5C1001C1884 /* MedicineRow.swift */,
+				AED832102485CFA5001C1884 /* OrderView.swift */,
+			);
+			path = MedicineViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE5C122F2484672000B888B0 /* LaunchScreen.storyboard in Resources */,
+				AED832052485BD28001C1884 /* MedicineData.json in Resources */,
 				AE5C122C2484672000B888B0 /* Preview Assets.xcassets in Resources */,
 				AE5C12292484672000B888B0 /* Assets.xcassets in Resources */,
 			);
@@ -159,12 +213,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE8EF9CC248472B8001AC224 /* AppointmentsView.swift in Sources */,
+				AED832112485CFA5001C1884 /* OrderView.swift in Sources */,
 				AE8EF9C62484715A001AC224 /* PersonalView.swift in Sources */,
 				AE5C12232484671F00B888B0 /* AppDelegate.swift in Sources */,
 				AE8EF9C8248471CE001AC224 /* MedicineOrderView.swift in Sources */,
+				AED8320D2485CEAA001C1884 /* Order.swift in Sources */,
 				AE5C12252484671F00B888B0 /* SceneDelegate.swift in Sources */,
 				AE8EF9CA2484721D001AC224 /* ChatView.swift in Sources */,
+				AED832092485C5C1001C1884 /* MedicineRow.swift in Sources */,
 				AE5C12272484671F00B888B0 /* ContentView.swift in Sources */,
+				AED832072485C1C4001C1884 /* Data.swift in Sources */,
+				AED832002485BAB7001C1884 /* Medicine.swift in Sources */,
+				AED8320F2485CF08001C1884 /* OrderPosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +365,7 @@
 				DEVELOPMENT_TEAM = 3G2P3D2GNR;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ProHealth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +386,7 @@
 				DEVELOPMENT_TEAM = 3G2P3D2GNR;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ProHealth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
