@@ -16,4 +16,5 @@ struct Medicine: Hashable, Codable, Identifiable {
     var price: Float
     var ammount: Int
     var description: String
+    var imageName: String
 }

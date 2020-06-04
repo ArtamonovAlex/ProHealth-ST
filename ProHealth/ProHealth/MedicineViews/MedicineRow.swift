@@ -26,23 +26,37 @@ struct MedicineRow: View {
     
     var body: some View {
         HStack {
-            Text(medicine.name)
-                .font(.title)
-            Spacer()
-            Stepper(value: $ammount, in: 0...medicine.ammount, onEditingChanged: changeAmmount)
-            {
-                Text("\(ammount)")
-                    .font(.title)
+            Image(medicine.imageName)
+            .resizable()
+            .frame(width: 150, height: 150)
+            
+            VStack {
+                HStack {
+                    Text(medicine.name)
+                         .font(.title)
+                    Spacer()
+                }
+                .padding()
+                HStack {
+                    Spacer()
+                    Text("\(medicine.price, specifier: "%.2f")")
+                        .font(.headline)
+                        .foregroundColor(Color.green)
+                }
+                .padding()
             }
-            .fixedSize()
         }
-        .padding()
+        .frame(height: 120)
+        .background(Color(.white))
+        .cornerRadius(20)
+        .shadow(radius: 5)
+        
     }
 }
 
 struct MedicineRow_Previews: PreviewProvider {
     static var previews: some View {
         MedicineRow(medicine: MedicineData[0], order: Order())
-            .previewLayout(.fixed(width: 400, height: 70))
+            .previewLayout(.fixed(width: 380, height: 120))
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE23D4DA248845AF004BE904 /* MedicineDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23D4D9248845AF004BE904 /* MedicineDetail.swift */; };
 		AE5C12232484671F00B888B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12222484671F00B888B0 /* AppDelegate.swift */; };
 		AE5C12252484671F00B888B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12242484671F00B888B0 /* SceneDelegate.swift */; };
 		AE5C12272484671F00B888B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12262484671F00B888B0 /* ContentView.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE23D4D9248845AF004BE904 /* MedicineDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDetail.swift; sourceTree = "<group>"; };
 		AE5C121F2484671F00B888B0 /* ProHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5C12222484671F00B888B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE5C12242484671F00B888B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				AED832082485C5C1001C1884 /* MedicineRow.swift */,
 				AED832102485CFA5001C1884 /* OrderView.swift */,
+				AE23D4D9248845AF004BE904 /* MedicineDetail.swift */,
 			);
 			path = MedicineViews;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				AE5C12272484671F00B888B0 /* ContentView.swift in Sources */,
 				AED832072485C1C4001C1884 /* Data.swift in Sources */,
 				AED832002485BAB7001C1884 /* Medicine.swift in Sources */,
+				AE23D4DA248845AF004BE904 /* MedicineDetail.swift in Sources */,
 				AED8320F2485CF08001C1884 /* OrderPosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

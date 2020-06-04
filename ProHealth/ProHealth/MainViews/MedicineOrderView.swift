@@ -12,31 +12,44 @@ struct MedicineOrderView: View {
     
     @ObservedObject var order : Order = Order()
     @State var isOrderOpen = false
+    @State var isDetailsOpen : Bool = false
+    @State var selectedMedicine: Medicine?
     
     var body: some View {
         ZStack(alignment: .top) {
+            HStack {
+                Spacer()
+                OrderButton(show: $isOrderOpen)
+            }
+            .padding()
+            .sheet(isPresented: $isOrderOpen) {
+                OrderView(order: self.order)
+            }
+            
             VStack {
-                    HStack {
-                        Text("Заказ лекарств")
-                            .font(.title)
-                        
-                        Spacer()
-                        
-                        OrderButton(show: $isOrderOpen)
-                    }
-                    .padding()
+                HStack {
+                    Text("Заказ лекарств")
+                        .font(.title)
                     
-                    VStack {
-                        ForEach(MedicineData) { medicine in
-                            MedicineRow(medicine: medicine, order: self.order)
+                    Spacer()
+                }
+                .padding()
+                
+                VStack {
+                    ForEach(MedicineData) { medicine in
+                        MedicineRow(medicine: medicine, order: self.order)
+                            .onTapGesture {
+                                self.isDetailsOpen.toggle()
+                                self.selectedMedicine = medicine
                         }
                     }
-                    Spacer()
+                }
+                Spacer()
             }
             .blur(radius: isOrderOpen ? 10 : 0)
             .animation(.default)
-            .sheet(isPresented: $isOrderOpen) {
-                OrderView(order: self.order)
+            .sheet(isPresented: $isDetailsOpen) {
+                MedicineDetail(medicine: self.selectedMedicine!, order: self.order)
             }
         }
     }
@@ -50,13 +63,11 @@ struct MedicineOrderView_Previews: PreviewProvider {
 
 struct OrderButton: View {
     @Binding var show: Bool
-
+    
     var body: some View {
-        ZStack(alignment: .topTrailing) {
-             Button(action: { self.show.toggle() }) {
-                Image(systemName: "bag")
-          }
-          Spacer()
-       }
+        Button(action: { self.show.toggle() }) {
+            Image(systemName: "bag")
+                .font(.system(size: 28))
+        }
     }
 }
