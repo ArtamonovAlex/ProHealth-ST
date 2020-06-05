@@ -14,16 +14,6 @@ struct MedicineRow: View {
     @State private var oldAmmount = 0
     @ObservedObject var order : Order
     
-    func changeAmmount(_ : Bool) {
-        if ammount > oldAmmount {
-            order.incrementCount(medicine: medicine)
-        }
-        if ammount < oldAmmount {
-            order.decrementCount(medicine: medicine)
-        }
-        oldAmmount = ammount
-    }
-    
     var body: some View {
         HStack {
             Image(medicine.imageName)

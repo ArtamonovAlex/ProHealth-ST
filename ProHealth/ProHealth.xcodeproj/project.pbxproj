@@ -18,6 +18,7 @@
 		AE8EF9C8248471CE001AC224 /* MedicineOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF9C7248471CE001AC224 /* MedicineOrderView.swift */; };
 		AE8EF9CA2484721D001AC224 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF9C92484721D001AC224 /* ChatView.swift */; };
 		AE8EF9CC248472B8001AC224 /* AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF9CB248472B8001AC224 /* AppointmentsView.swift */; };
+		AEAE859B248991FC003B0C75 /* OrderElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE859A248991FC003B0C75 /* OrderElementView.swift */; };
 		AED832002485BAB7001C1884 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED831FF2485BAB7001C1884 /* Medicine.swift */; };
 		AED832052485BD28001C1884 /* MedicineData.json in Resources */ = {isa = PBXBuildFile; fileRef = AED832042485BD28001C1884 /* MedicineData.json */; };
 		AED832072485C1C4001C1884 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED832062485C1C4001C1884 /* Data.swift */; };
@@ -41,6 +42,7 @@
 		AE8EF9C7248471CE001AC224 /* MedicineOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineOrderView.swift; sourceTree = "<group>"; };
 		AE8EF9C92484721D001AC224 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		AE8EF9CB248472B8001AC224 /* AppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsView.swift; sourceTree = "<group>"; };
+		AEAE859A248991FC003B0C75 /* OrderElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderElementView.swift; sourceTree = "<group>"; };
 		AED831FF2485BAB7001C1884 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		AED832042485BD28001C1884 /* MedicineData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MedicineData.json; sourceTree = "<group>"; };
 		AED832062485C1C4001C1884 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				AED832082485C5C1001C1884 /* MedicineRow.swift */,
 				AED832102485CFA5001C1884 /* OrderView.swift */,
 				AE23D4D9248845AF004BE904 /* MedicineDetail.swift */,
+				AEAE859A248991FC003B0C75 /* OrderElementView.swift */,
 			);
 			path = MedicineViews;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				AED8320D2485CEAA001C1884 /* Order.swift in Sources */,
 				AE5C12252484671F00B888B0 /* SceneDelegate.swift in Sources */,
 				AE8EF9CA2484721D001AC224 /* ChatView.swift in Sources */,
+				AEAE859B248991FC003B0C75 /* OrderElementView.swift in Sources */,
 				AED832092485C5C1001C1884 /* MedicineRow.swift in Sources */,
 				AE5C12272484671F00B888B0 /* ContentView.swift in Sources */,
 				AED832072485C1C4001C1884 /* Data.swift in Sources */,

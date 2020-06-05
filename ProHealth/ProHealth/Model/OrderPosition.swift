@@ -9,9 +9,12 @@
 import Foundation
 
 
-struct OrderPosition: Hashable, Codable, Identifiable {
-    var id: Int
-    var name: String
-    var ammount: Int
-    var price: Float
+class OrderPosition: ObservableObject, Identifiable {
+    var medicine: Medicine
+    @Published var count: Int
+    
+    init(medicine: Medicine, count: Int) {
+        self.medicine = medicine
+        self.count = count
+    }
 }

@@ -16,33 +16,19 @@ class Order : ObservableObject {
     }
     
     func incrementCount(medicine: Medicine) {
-        if let index = orderPositions.firstIndex(where: {$0.id == medicine.id}) {
-            orderPositions[index].ammount += 1
+        if let index = orderPositions.firstIndex(where: {$0.medicine.id == medicine.id}) {
+            orderPositions[index].count += 1
         } else {
-            orderPositions.append(OrderPosition(
-                id: medicine.id,
-                name: medicine.name,
-                ammount: 1,
-                price: medicine.price
-            ))
+            orderPositions.append(OrderPosition(medicine: medicine, count: 1))
         }
     }
     
     func decrementCount(medicine: Medicine) {
-        if let index = orderPositions.firstIndex(where: {$0.id == medicine.id}) {
-            orderPositions[index].ammount -= 1
-            if orderPositions[index].ammount == 0 {
+        if let index = orderPositions.firstIndex(where: {$0.medicine.id == medicine.id}) {
+            orderPositions[index].count -= 1
+            if orderPositions[index].count == 0 {
                 orderPositions.remove(at: index)
             }
         }
-    }
-    
-    func add(medicine : Medicine) {
-        orderPositions.append(OrderPosition(
-            id: medicine.id,
-            name: medicine.name,
-            ammount: 1,
-            price: medicine.price
-        ))
     }
 }

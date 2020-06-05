@@ -10,7 +10,7 @@ import SwiftUI
 
 var getOrder : Order = {
     let order: Order = Order()
-    order.add(medicine: MedicineData[0])
+    order.incrementCount(medicine: MedicineData[0])
     return order
 }()
 
@@ -28,7 +28,7 @@ struct OrderView: View {
                 .padding()
                 
                 ForEach(order.orderPositions) { orderPosition in
-                    Text("\(orderPosition.name) - \(orderPosition.ammount)")
+                    OrderElementView(element: orderPosition, order: self.order)
                 }
                 
                 Spacer()
