@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Anna Mikhailova",
+        "category": "Oculists",
+        "id": 1001,
+        "imageName": "oculist1"
+    },
+    {
+        "name": "Peter Trifonov",
+        "category": "Oculists",
+        "id": 1002,
+        "imageName": "oculist2"
+    },
+    {
+        "name": "Maria Vlasova",
+        "category": "Oculists",
+        "id": 1003,
+        "imageName": "oculist3"
+    }
+]
