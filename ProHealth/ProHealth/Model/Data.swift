@@ -13,6 +13,7 @@ import SwiftUI
 
 
 let MedicineData: [Medicine] = load("MedicineData.json")
+let AddressData: [Address] = load("AddressData.json")
 
 
 func load<T: Decodable>(_ filename: String) -> T {
