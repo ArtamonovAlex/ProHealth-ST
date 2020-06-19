@@ -14,5 +14,9 @@ struct Doctor: Hashable, Codable, Identifiable {
     var name: String
     var category: String
     var imageName: String
+    var isFeatured: Bool
+    var availableTime: [String: [String]]
+
 }
+
 

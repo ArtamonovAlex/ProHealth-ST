@@ -1,8 +1,8 @@
 //
-//  MedicineDetail.swift
+//  DoctorsDetail.swift
 //  ProHealth
 //
-//  Created by Aleksandr Artamonov on 03.06.2020.
+//  Created by Валерия Самонина on 09.06.2020.
 //  Copyright © 2020 Aleksandr Artamonov. All rights reserved.
 //
 
@@ -11,21 +11,36 @@ import SwiftUI
 struct DoctorsDetail: View {
     
     var doctor: Doctor
-    
+    @State var selectedDate = Date()
+    @State var isDateChosen = false
+
     var body: some View {
         VStack {
             ScrollView {
                 VStack {
-                    Image(doctor.imageName)
-                        .resizable()
-                        .frame(height: 300)
-                    
                     HStack {
+                        Image(doctor.imageName)
+                            .resizable()
+                            .frame(width:100, height:100)
+                            .clipShape(Circle())
                         Text(doctor.name)
                             .font(.title)
-                        Spacer()
+                            .padding(.horizontal)
                     }
-                    .padding(.leading)
+                    .padding(.vertical)
+                    DoctorsTimetable(doctor: doctor, selectedDate: $selectedDate, isDateChosen: $isDateChosen)
+                    Button(action: {
+                        
+                    }) {
+                        Text("Записаться на прием")
+                        .font(.headline)
+                        .padding(.horizontal)
+                        .foregroundColor(.white)
+                        }
+                    .padding()
+                    .background(isDateChosen ? Color("pink"): Color.gray)
+                    .cornerRadius(20)
+                    .disabled(!isDateChosen)
                 }
             }
         }
@@ -37,4 +52,3 @@ struct DoctorsDetail_Previews: PreviewProvider {
         DoctorsDetail(doctor: DoctorsData[0])
     }
 }
-

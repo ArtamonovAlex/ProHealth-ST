@@ -10,8 +10,11 @@ import SwiftUI
 
 struct ChatView: View {
     var body: some View {
-        Text("Чат со специалистом")
-            .font(.title)
+        VStack {
+            Text("Чат со специалистом")
+                .font(.title)
+        }
+
     }
 }
 
