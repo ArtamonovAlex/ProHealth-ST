@@ -69,7 +69,11 @@ struct OrderButton: View {
     var body: some View {
         Button(action: { self.show.toggle() }) {
             Image(systemName: "bag")
+                .padding(12)
                 .font(.system(size: 28))
+                .background(Color.white)
+                .cornerRadius(25)
+            .shadow(radius: 10)
         }
     }
 }

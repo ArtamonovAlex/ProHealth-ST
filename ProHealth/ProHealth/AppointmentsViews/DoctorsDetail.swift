@@ -27,7 +27,7 @@ struct DoctorsDetail: View {
                             .font(.title)
                             .padding(.horizontal)
                     }
-                    .padding(.vertical)
+                    .padding(.bottom)
                     DoctorsTimetable(doctor: doctor, selectedDate: $selectedDate, isDateChosen: $isDateChosen)
                     Button(action: {
                         

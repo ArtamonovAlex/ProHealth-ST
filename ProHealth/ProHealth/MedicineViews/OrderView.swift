@@ -58,10 +58,11 @@ struct OrderView: View {
                         .padding()
                         .padding(.horizontal, 100)
                         .foregroundColor(.white)
-                        .background(Color("pink"))
+                        .background(order.orderPositions.count != 0 ? Color("pink") : Color.gray)
                         .cornerRadius(20)
                     
                 }
+                .disabled(order.orderPositions.count == 0)
                 Spacer()
             }
         }
