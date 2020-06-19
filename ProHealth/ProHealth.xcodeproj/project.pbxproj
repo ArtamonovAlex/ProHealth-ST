@@ -16,7 +16,6 @@
 		AE5C122F2484672000B888B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5C122D2484672000B888B0 /* LaunchScreen.storyboard */; };
 		AE8EF9C62484715A001AC224 /* PersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF9C52484715A001AC224 /* PersonalView.swift */; };
 		AE8EF9C8248471CE001AC224 /* MedicineOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF9C7248471CE001AC224 /* MedicineOrderView.swift */; };
-		AE8EF9CA2484721D001AC224 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF9C92484721D001AC224 /* ChatView.swift */; };
 		AE8EF9CC248472B8001AC224 /* AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8EF9CB248472B8001AC224 /* AppointmentsView.swift */; };
 		AEAE859B248991FC003B0C75 /* OrderElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE859A248991FC003B0C75 /* OrderElementView.swift */; };
 		AEB6BD472497F74F007FA5CA /* AddressesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB6BD462497F74F007FA5CA /* AddressesView.swift */; };
@@ -43,7 +42,6 @@
 		AE5C12302484672000B888B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE8EF9C52484715A001AC224 /* PersonalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalView.swift; sourceTree = "<group>"; };
 		AE8EF9C7248471CE001AC224 /* MedicineOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineOrderView.swift; sourceTree = "<group>"; };
-		AE8EF9C92484721D001AC224 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		AE8EF9CB248472B8001AC224 /* AppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsView.swift; sourceTree = "<group>"; };
 		AEAE859A248991FC003B0C75 /* OrderElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderElementView.swift; sourceTree = "<group>"; };
 		AEB6BD462497F74F007FA5CA /* AddressesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesView.swift; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				AE8EF9CB248472B8001AC224 /* AppointmentsView.swift */,
-				AE8EF9C92484721D001AC224 /* ChatView.swift */,
 				AE8EF9C7248471CE001AC224 /* MedicineOrderView.swift */,
 				AE8EF9C52484715A001AC224 /* PersonalView.swift */,
 			);
@@ -245,7 +242,6 @@
 				AEB6BD492498066C007FA5CA /* Address.swift in Sources */,
 				AED8320D2485CEAA001C1884 /* Order.swift in Sources */,
 				AE5C12252484671F00B888B0 /* SceneDelegate.swift in Sources */,
-				AE8EF9CA2484721D001AC224 /* ChatView.swift in Sources */,
 				AEAE859B248991FC003B0C75 /* OrderElementView.swift in Sources */,
 				AED832092485C5C1001C1884 /* MedicineRow.swift in Sources */,
 				AE5C12272484671F00B888B0 /* ContentView.swift in Sources */,
