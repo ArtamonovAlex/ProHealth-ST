@@ -27,19 +27,12 @@ struct ContentView: View {
                 }
                 .tag(1)
             
-            ChatView()
-                .tabItem {
-                    Image(systemName: "bubble.left.fill")
-                        .imageScale(.large)
-                }
-                .tag(2)
-            
             AppointmentsView()
                 .tabItem {
                     Image(systemName: "waveform.path.ecg")
                         .imageScale(.large)
                 }
-                .tag(3)
+                .tag(2)
         }
     }
 }

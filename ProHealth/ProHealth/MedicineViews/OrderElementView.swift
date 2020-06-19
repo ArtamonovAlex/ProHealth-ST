@@ -14,30 +14,43 @@ struct OrderElementView: View {
     
     var body: some View {
         HStack {
-            Text(element.medicine.name)
-                .font(.title)
-            
-            Spacer()
-            Button(action: {
-                self.order.decrementCount(medicine: self.element.medicine)
-            }) {
-                Image(systemName: "minus")
-                    .font(.system(size: 30))
-            }
-            .disabled(element.count <= 0)
-            
-            Text("\(element.count)")
-                .font(.title)
-                .padding()
-            
-            Button(action: {
-                self.order.incrementCount(medicine: self.element.medicine)
-            }) {
-                Image(systemName: "plus")
-                    .font(.system(size: 30))
+            Image(element.medicine.imageName)
+                .resizable()
+                .frame(width: 120, height: 120)
+            VStack {
+                HStack {
+                    Text(element.medicine.name)
+                        .font(.title)
+                    Spacer()
+                }
+                HStack {
+                    Button(action: {
+                        self.order.decrementCount(medicine: self.element.medicine)
+                    }) {
+                        Image(systemName: "minus")
+                            .font(.system(size: 20))
+                    }
+                    
+                    Text("\(element.count)")
+                        .font(.headline)
+                        .padding(.horizontal)
+                    
+                    Button(action: {
+                        self.order.incrementCount(medicine: self.element.medicine)
+                    }) {
+                        Image(systemName: "plus")
+                            .font(.system(size: 20))
+                    }
+                    Spacer()
+                    Text("\(element.medicine.price * Float(element.count), specifier: "%.2f")")
+                        .padding(.horizontal)
+                }
             }
         }
-        .padding()
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(Color("pink"), lineWidth: 2)
+        )
     }
 }
 

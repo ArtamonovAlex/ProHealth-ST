@@ -33,7 +33,7 @@ struct MedicineRow: View {
                     Spacer()
                     Text("\(medicine.price, specifier: "%.2f")")
                         .font(.headline)
-                        .foregroundColor(Color.green)
+                        .foregroundColor(Color("pink"))
                 }
                 .padding()
             }
