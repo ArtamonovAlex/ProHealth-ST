@@ -12,8 +12,9 @@ struct MedicineOrderView: View {
     
     @ObservedObject var order : Order = Order()
     @State var isOrderOpen = false
-    @State var isDetailsOpen : Bool = false
+    @State var isDetailsOpen = false
     @State var selectedMedicine: Medicine?
+    @EnvironmentObject var userData: UserData
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -24,6 +25,7 @@ struct MedicineOrderView: View {
             .padding()
             .sheet(isPresented: $isOrderOpen) {
                 OrderView(order: self.order)
+                    .environmentObject(self.userData)
             }
             
             VStack {
@@ -57,7 +59,7 @@ struct MedicineOrderView: View {
 
 struct MedicineOrderView_Previews: PreviewProvider {
     static var previews: some View {
-        MedicineOrderView()
+        MedicineOrderView().environmentObject(UserData())
     }
 }
 

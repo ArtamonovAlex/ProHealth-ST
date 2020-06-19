@@ -10,9 +10,18 @@ import Foundation
 
 class Order : ObservableObject {
     @Published var orderPositions: [OrderPosition] = []
+    @Published var status : OrderStatus = .open
+    @Published var id: Int
+    @Published var address: Optional<Address> = nil
     
     init() {
-        
+        self.id = generateOrderId()
+    }
+    
+    init(status: OrderStatus, positions: [OrderPosition]) {
+        self.id = generateOrderId()
+        self.status = status
+        self.orderPositions = positions
     }
     
     func incrementCount(medicine: Medicine) {
@@ -31,4 +40,14 @@ class Order : ObservableObject {
             }
         }
     }
+}
+
+func generateOrderId() -> Int {
+    return Int.random(in: 0..<10000)
+}
+
+enum OrderStatus {
+    case open
+    case placed
+    case completed
 }

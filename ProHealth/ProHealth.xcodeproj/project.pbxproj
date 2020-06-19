@@ -14,6 +14,7 @@
 		0FA74044249CEA5800C59862 /* DoctorsTimetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA74043249CEA5800C59862 /* DoctorsTimetable.swift */; };
 		0FA74046249D07E600C59862 /* HStackWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA74045249D07E600C59862 /* HStackWrap.swift */; };
 		AE23D4DA248845AF004BE904 /* MedicineDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23D4D9248845AF004BE904 /* MedicineDetail.swift */; };
+		AE46DC3B249D2085006181F7 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE46DC3A249D2085006181F7 /* UserData.swift */; };
 		AE5C12232484671F00B888B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12222484671F00B888B0 /* AppDelegate.swift */; };
 		AE5C12252484671F00B888B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12242484671F00B888B0 /* SceneDelegate.swift */; };
 		AE5C12272484671F00B888B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12262484671F00B888B0 /* ContentView.swift */; };
@@ -44,6 +45,7 @@
 		0FA74043249CEA5800C59862 /* DoctorsTimetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsTimetable.swift; sourceTree = "<group>"; };
 		0FA74045249D07E600C59862 /* HStackWrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackWrap.swift; sourceTree = "<group>"; };
 		AE23D4D9248845AF004BE904 /* MedicineDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDetail.swift; sourceTree = "<group>"; };
+		AE46DC3A249D2085006181F7 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		AE5C121F2484671F00B888B0 /* ProHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5C12222484671F00B888B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE5C12242484671F00B888B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				AED8320E2485CF08001C1884 /* OrderPosition.swift */,
 				0FA57F95248E45C400D3132A /* Doctor.swift */,
 				AEB6BD482498066C007FA5CA /* Address.swift */,
+				AE46DC3A249D2085006181F7 /* UserData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				AED832092485C5C1001C1884 /* MedicineRow.swift in Sources */,
 				AE5C12272484671F00B888B0 /* ContentView.swift in Sources */,
 				AED832072485C1C4001C1884 /* Data.swift in Sources */,
+				AE46DC3B249D2085006181F7 /* UserData.swift in Sources */,
 				AED832002485BAB7001C1884 /* Medicine.swift in Sources */,
 				AE23D4DA248845AF004BE904 /* MedicineDetail.swift in Sources */,
 				0F500AED248F8F0D006845DF /* DoctorsDetail.swift in Sources */,

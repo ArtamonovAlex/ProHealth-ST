@@ -49,6 +49,5 @@ struct MedicineRow: View {
 struct MedicineRow_Previews: PreviewProvider {
     static var previews: some View {
         MedicineRow(medicine: MedicineData[0], order: Order())
-            .previewLayout(.fixed(width: 380, height: 120))
     }
 }
