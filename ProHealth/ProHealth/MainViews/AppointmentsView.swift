@@ -9,9 +9,22 @@
 import SwiftUI
 
 struct AppointmentsView: View {
+    let categories: [String: [Doctor]] = Dictionary(
+            grouping: DoctorsData,
+            by: { $0.category }
+        )
+
     var body: some View {
-        Text("Запись к врачу")
-            .font(.title)
+        NavigationView{
+            List{
+               ForEach(categories.keys.sorted(), id: \.self) { key in
+                    DoctorsRow(categoryName: key, items: self.categories[key]!)
+                .padding()
+                }
+                .listRowInsets(EdgeInsets())
+            }
+            .navigationBarTitle(Text("Запись на приём"))
+        }
     }
 }
 

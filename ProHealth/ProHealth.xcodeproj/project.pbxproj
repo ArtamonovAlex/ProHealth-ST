@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F500AED248F8F0D006845DF /* DoctorsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F500AEC248F8F0D006845DF /* DoctorsDetail.swift */; };
+		0F500AEE248F92F5006845DF /* DoctorsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FA57F94248E393200D3132A /* DoctorsData.json */; };
+		0F500AF0248F9381006845DF /* DoctorsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F500AEF248F9381006845DF /* DoctorsRow.swift */; };
+		0FA57F96248E45C400D3132A /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA57F95248E45C400D3132A /* Doctor.swift */; };
+		0FA74044249CEA5800C59862 /* DoctorsTimetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA74043249CEA5800C59862 /* DoctorsTimetable.swift */; };
+		0FA74046249D07E600C59862 /* HStackWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA74045249D07E600C59862 /* HStackWrap.swift */; };
 		AE23D4DA248845AF004BE904 /* MedicineDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23D4D9248845AF004BE904 /* MedicineDetail.swift */; };
 		AE5C12232484671F00B888B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12222484671F00B888B0 /* AppDelegate.swift */; };
 		AE5C12252484671F00B888B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12242484671F00B888B0 /* SceneDelegate.swift */; };
@@ -29,6 +35,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F500AEC248F8F0D006845DF /* DoctorsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsDetail.swift; sourceTree = "<group>"; };
+		0F500AEF248F9381006845DF /* DoctorsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsRow.swift; sourceTree = "<group>"; };
+		0FA57F94248E393200D3132A /* DoctorsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DoctorsData.json; sourceTree = "<group>"; };
+		0FA57F95248E45C400D3132A /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		0FA74043249CEA5800C59862 /* DoctorsTimetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsTimetable.swift; sourceTree = "<group>"; };
+		0FA74045249D07E600C59862 /* HStackWrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackWrap.swift; sourceTree = "<group>"; };
 		AE23D4D9248845AF004BE904 /* MedicineDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDetail.swift; sourceTree = "<group>"; };
 		AE5C121F2484671F00B888B0 /* ProHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5C12222484671F00B888B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +75,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FA57F91248E388A00D3132A /* AppointmentsViews */ = {
+			isa = PBXGroup;
+			children = (
+				0F500AEC248F8F0D006845DF /* DoctorsDetail.swift */,
+				0F500AEF248F9381006845DF /* DoctorsRow.swift */,
+				0FA74043249CEA5800C59862 /* DoctorsTimetable.swift */,
+				0FA74045249D07E600C59862 /* HStackWrap.swift */,
+			);
+			path = AppointmentsViews;
+			sourceTree = "<group>";
+		};
 		AE5C12162484671E00B888B0 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +105,7 @@
 		AE5C12212484671F00B888B0 /* ProHealth */ = {
 			isa = PBXGroup;
 			children = (
+				0FA57F91248E388A00D3132A /* AppointmentsViews */,
 				AED8320B2485CD55001C1884 /* MedicineViews */,
 				AED8320A2485CD24001C1884 /* MainViews */,
 				AED832032485BCCC001C1884 /* Resources */,
@@ -112,6 +136,7 @@
 				AED832062485C1C4001C1884 /* Data.swift */,
 				AED8320C2485CEAA001C1884 /* Order.swift */,
 				AED8320E2485CF08001C1884 /* OrderPosition.swift */,
+				0FA57F95248E45C400D3132A /* Doctor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				AED832042485BD28001C1884 /* MedicineData.json */,
+				0FA57F94248E393200D3132A /* DoctorsData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -204,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F500AEE248F92F5006845DF /* DoctorsData.json in Resources */,
 				AE5C122F2484672000B888B0 /* LaunchScreen.storyboard in Resources */,
 				AED832052485BD28001C1884 /* MedicineData.json in Resources */,
 				AE5C122C2484672000B888B0 /* Preview Assets.xcassets in Resources */,
@@ -221,8 +248,12 @@
 				AE8EF9CC248472B8001AC224 /* AppointmentsView.swift in Sources */,
 				AED832112485CFA5001C1884 /* OrderView.swift in Sources */,
 				AE8EF9C62484715A001AC224 /* PersonalView.swift in Sources */,
+				0FA74046249D07E600C59862 /* HStackWrap.swift in Sources */,
+				0F500AF0248F9381006845DF /* DoctorsRow.swift in Sources */,
 				AE5C12232484671F00B888B0 /* AppDelegate.swift in Sources */,
+				0FA74044249CEA5800C59862 /* DoctorsTimetable.swift in Sources */,
 				AE8EF9C8248471CE001AC224 /* MedicineOrderView.swift in Sources */,
+				0FA57F96248E45C400D3132A /* Doctor.swift in Sources */,
 				AED8320D2485CEAA001C1884 /* Order.swift in Sources */,
 				AE5C12252484671F00B888B0 /* SceneDelegate.swift in Sources */,
 				AE8EF9CA2484721D001AC224 /* ChatView.swift in Sources */,
@@ -232,6 +263,7 @@
 				AED832072485C1C4001C1884 /* Data.swift in Sources */,
 				AED832002485BAB7001C1884 /* Medicine.swift in Sources */,
 				AE23D4DA248845AF004BE904 /* MedicineDetail.swift in Sources */,
+				0F500AED248F8F0D006845DF /* DoctorsDetail.swift in Sources */,
 				AED8320F2485CF08001C1884 /* OrderPosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,7 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ProHealth/Preview Content\"";
-				DEVELOPMENT_TEAM = 3G2P3D2GNR;
+				DEVELOPMENT_TEAM = 477JDCFSC4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ProHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -378,7 +410,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = artamonov.ProHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = artamonov1.ProHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -391,7 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ProHealth/Preview Content\"";
-				DEVELOPMENT_TEAM = 3G2P3D2GNR;
+				DEVELOPMENT_TEAM = 477JDCFSC4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ProHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -399,7 +431,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = artamonov.ProHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = artamonov1.ProHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
