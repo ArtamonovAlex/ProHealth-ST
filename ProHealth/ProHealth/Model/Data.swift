@@ -13,6 +13,7 @@ import SwiftUI
 
 
 let MedicineData: [Medicine] = load("MedicineData.json")
+let DoctorsData: [Doctor] = load("DoctorsData.json")
 let AddressData: [Address] = load("AddressData.json")
 
 
@@ -37,3 +38,4 @@ func load<T: Decodable>(_ filename: String) -> T {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
 }
+

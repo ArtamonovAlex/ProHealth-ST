@@ -24,6 +24,8 @@ struct MedicineRow: View {
                 HStack {
                     Text(medicine.name)
                          .font(.title)
+                        .foregroundColor(.black)
+                    
                     Spacer()
                 }
                 .padding()
