@@ -10,27 +10,34 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
+    @EnvironmentObject var userData: UserData
  
     var body: some View {
         TabView(selection: $selection){
             PersonalView()
+            .environmentObject(userData)
                 .tabItem {
                     Image(systemName: "person.fill")
                         .imageScale(.large)
+                    Text("Главная")
                 }
                 .tag(0)
             
             MedicineOrderView()
+                .environmentObject(userData)
                 .tabItem {
                     Image(systemName: "cart.fill")
                         .imageScale(.large)
+                    Text("Заказ лекарств")
                 }
                 .tag(1)
             
             AppointmentsView()
+                .environmentObject(userData)
                 .tabItem {
                     Image(systemName: "waveform.path.ecg")
                         .imageScale(.large)
+                    Text("Запись на приём")
                 }
                 .tag(2)
         }
@@ -39,6 +46,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(UserData())
     }
 }

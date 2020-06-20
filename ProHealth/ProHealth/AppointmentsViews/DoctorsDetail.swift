@@ -13,6 +13,7 @@ struct DoctorsDetail: View {
     var doctor: Doctor
     @State var selectedDate = Date()
     @State var isDateChosen = false
+    @EnvironmentObject var userData: UserData
 
     var body: some View {
         VStack {
@@ -27,10 +28,10 @@ struct DoctorsDetail: View {
                             .font(.title)
                             .padding(.horizontal)
                     }
-                    .padding(.vertical)
+                    .padding(.bottom)
                     DoctorsTimetable(doctor: doctor, selectedDate: $selectedDate, isDateChosen: $isDateChosen)
                     Button(action: {
-                        
+                        self.userData.appointments.append(Appointment(doctor: self.doctor, time: self.selectedDate))
                     }) {
                         Text("Записаться на прием")
                         .font(.headline)
@@ -49,6 +50,6 @@ struct DoctorsDetail: View {
 
 struct DoctorsDetail_Previews: PreviewProvider {
     static var previews: some View {
-        DoctorsDetail(doctor: DoctorsData[0])
+        DoctorsDetail(doctor: DoctorsData[0]).environmentObject(UserData())
     }
 }

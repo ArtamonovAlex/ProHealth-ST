@@ -20,12 +20,15 @@ struct OrderView: View {
     @ObservedObject var order: Order
     var userAddresses: [Address] = AddressData
     @State var selectedAdress = 0
+    @EnvironmentObject var userData: UserData
+    @Environment(\.presentationMode) private var presentationMode
     
     var body: some View {
         VStack {
             HStack {
                 Text("Заказ")
                     .font(.title)
+                    .padding(.top)
                 Spacer()
             }
             .padding(.horizontal)
@@ -45,17 +48,21 @@ struct OrderView: View {
                 AddressesView(selected: $selectedAdress, userAddresses: userAddresses)
                 
                 Button(action: {
-                    
+                    self.order.status = OrderStatus.placed
+                    self.order.address = self.userAddresses[self.selectedAdress]
+                    self.userData.orders.append(self.order)
+                    self.presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Оформить заказ")
                         .font(.headline)
                         .padding()
                         .padding(.horizontal, 100)
                         .foregroundColor(.white)
-                        .background(Color("pink"))
+                        .background(order.orderPositions.count != 0 ? Color("pink") : Color.gray)
                         .cornerRadius(20)
                     
                 }
+                .disabled(order.orderPositions.count == 0)
                 Spacer()
             }
         }
@@ -65,6 +72,6 @@ struct OrderView: View {
 struct OrderView_Previews: PreviewProvider {
     static var previews: some View {
         
-        OrderView(order: getOrder)
+        OrderView(order: getOrder).environmentObject(UserData())
     }
 }

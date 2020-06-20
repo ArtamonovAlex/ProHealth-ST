@@ -12,6 +12,8 @@ struct DoctorsRow: View {
     var categoryName: String
     var items: [Doctor]
     
+    @EnvironmentObject var userData: UserData
+    
     var body: some View {
             VStack(alignment: .leading) {
                 Text(self.categoryName)
@@ -25,7 +27,7 @@ struct DoctorsRow: View {
                             NavigationLink(
                                 destination: DoctorsDetail(
                                     doctor: doctor
-                                )
+                                ).environmentObject(self.userData)
                             ) {
                                 DoctorItem(doctor: doctor)
                             }
@@ -59,6 +61,6 @@ struct CategoryRow_Previews: PreviewProvider {
         DoctorsRow(
             categoryName: DoctorsData[0].category,
             items: DoctorsData
-        )
+        ).environmentObject(UserData())
     }
 }
