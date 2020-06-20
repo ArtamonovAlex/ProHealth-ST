@@ -18,8 +18,8 @@ var getOrder : Order = {
 
 struct OrderView: View {
     @ObservedObject var order: Order
-    var userAddresses: [Address] = AddressData
-    @State var selectedAdress = 0
+    @State var userAddresses: [Address] = AddressData
+    @State var selectedAdress = 1
     @EnvironmentObject var userData: UserData
     @Environment(\.presentationMode) private var presentationMode
     
@@ -45,7 +45,7 @@ struct OrderView: View {
                 }
                 .padding(.horizontal)
                 .padding(.bottom)
-                AddressesView(selected: $selectedAdress, userAddresses: userAddresses)
+                AddressesView(selected: $selectedAdress, userAddresses: $userAddresses)
                 
                 Button(action: {
                     self.order.status = OrderStatus.placed

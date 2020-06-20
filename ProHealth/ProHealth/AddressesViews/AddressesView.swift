@@ -10,29 +10,30 @@ import SwiftUI
 
 struct AddressesView: View {
     @Binding var selected: Int
-    @State var userAddresses: [Address] = AddressData
+    @Binding var userAddresses: [Address]
+    @State var isAddressCreationFormOpen = false
     
     init(
         selected: Binding<Int>,
-        userAddresses: [Address]
+        userAddresses: Binding<[Address]>
     ) {
         self._selected = selected
-        self.userAddresses = userAddresses
+        self._userAddresses = userAddresses
     }
     
     var body: some View {
         VStack {
-            RadioButtonGroup(items: userAddresses.count, selectedId: $selected) { index in
+            RadioButtonGroup(items: $userAddresses, selectedId: $selected) { address in
                 HStack {
                     VStack{
                         HStack {
-                            Text("\(self.userAddresses[index].label)")
+                            Text("\(address.label)")
                                 .font(.headline)
                                 .foregroundColor(Color("pink"))
                                 .padding(.horizontal)
                             Spacer()
                         }
-                        Text("\(self.userAddresses[index].fullAddress)")
+                        Text("\(address.fullAddress)")
                             .padding(.horizontal)
                             .foregroundColor(.primary)
                     }
@@ -41,7 +42,7 @@ struct AddressesView: View {
                 .padding(5)
             }
             Button(action: {
-                
+                self.$isAddressCreationFormOpen.wrappedValue.toggle()
             }) {
                 Image(systemName: "plus.circle")
                     .font(.system(size: 28))
@@ -54,12 +55,17 @@ struct AddressesView: View {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(Color("pink"), lineWidth: 2)
         )
+            .sheet(isPresented: $isAddressCreationFormOpen) {
+                CreateAddressView(callback: {address in
+                    self.userAddresses.append(address)
+                })
+        }
     }
 }
 
 struct AdressesView_Previews: PreviewProvider {
     static var previews: some View {
-        AddressesView(selected: .constant(0), userAddresses: AddressData)
+        AddressesView(selected: .constant(1), userAddresses: .constant(AddressData))
     }
 }
 
@@ -99,19 +105,21 @@ struct RadioButton<Content: View>: View {
 }
 
 struct RadioButtonGroup<Content: View>: View {
-
-    let items : Int
+    
+    @Binding var items : [Address]
     @Binding var selectedId: Int
-    let content: (Int) -> Content
+    let content: (Address) -> Content
     
     var body: some View {
         VStack {
-            ForEach(0..<items) { index in
-                Spacer().frame(height: 0)
-                RadioButton(index, selectedID: self.$selectedId) {
-                    self.content(index)
+            ForEach(items, id: \.id) { item in
+                VStack {
+                    Spacer().frame(height: 0)
+                    RadioButton(item.id, selectedID: self.$selectedId) {
+                        self.content(item)
+                    }
+                    Spacer().frame(height: 0)
                 }
-                Spacer().frame(height: 0)
             }
         }
     }
