@@ -388,7 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 477JDCFSC4;
+				DEVELOPMENT_TEAM = 3G2P3D2GNR;
 				INFOPLIST_FILE = ProHealthUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -407,7 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 477JDCFSC4;
+				DEVELOPMENT_TEAM = 3G2P3D2GNR;
 				INFOPLIST_FILE = ProHealthUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -542,7 +542,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ProHealth/Preview Content\"";
-				DEVELOPMENT_TEAM = 477JDCFSC4;
+				DEVELOPMENT_TEAM = 3G2P3D2GNR;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ProHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -563,7 +563,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ProHealth/Preview Content\"";
-				DEVELOPMENT_TEAM = 477JDCFSC4;
+				DEVELOPMENT_TEAM = 3G2P3D2GNR;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ProHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
