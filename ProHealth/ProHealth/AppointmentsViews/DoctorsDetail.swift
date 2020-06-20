@@ -14,6 +14,7 @@ struct DoctorsDetail: View {
     @State var selectedDate = Date()
     @State var isDateChosen = false
     @EnvironmentObject var userData: UserData
+    @Environment(\.presentationMode) private var presentationMode
 
     var body: some View {
         VStack {
@@ -32,12 +33,13 @@ struct DoctorsDetail: View {
                     DoctorsTimetable(doctor: doctor, selectedDate: $selectedDate, isDateChosen: $isDateChosen)
                     Button(action: {
                         self.userData.appointments.append(Appointment(doctor: self.doctor, time: self.selectedDate))
+                        self.presentationMode.wrappedValue.dismiss()
                     }) {
                         Text("Записаться на прием")
-                        .font(.headline)
-                        .padding(.horizontal)
-                        .foregroundColor(.white)
-                        }
+                            .font(.headline)
+                            .padding(.horizontal)
+                            .foregroundColor(.white)
+                    }
                     .padding()
                     .background(isDateChosen ? Color("pink"): Color.gray)
                     .cornerRadius(20)

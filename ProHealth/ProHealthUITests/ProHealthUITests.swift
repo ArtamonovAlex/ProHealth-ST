@@ -70,4 +70,61 @@ class ProHealthUITests: XCTestCase {
         XCTAssertTrue(elementsQuery.scrollViews.otherElements.buttons.element.label.hasPrefix("Заказ"))
         XCTAssertTrue(elementsQuery.scrollViews.otherElements.buttons.element.label.hasSuffix("Бепантен x6"))
     }
+    
+    func testAppointmentCreation() throws {
+       let app = XCUIApplication()
+        app.launch()
+        app.tabBars.buttons["Запись на приём"].tap()
+        app.tables/*@START_MENU_TOKEN@*/.scrollViews/*[[".cells.scrollViews",".scrollViews"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.otherElements.buttons["Петр Трифонов"].tap()
+        
+        let elementsQuery = app.scrollViews.otherElements
+        elementsQuery.buttons["22.06"].tap()
+        elementsQuery.buttons["10:00"].tap()
+        
+        elementsQuery.buttons["Записаться на прием"].tap()
+        app.tables/*@START_MENU_TOKEN@*/.scrollViews/*[[".cells.scrollViews",".scrollViews"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.otherElements.buttons["Александр Павлов"].tap()
+        elementsQuery.buttons["25.06"].tap()
+        elementsQuery.buttons["15:00"].tap()
+        elementsQuery.buttons["Записаться на прием"].tap()
+        
+        app.tabBars.buttons["Главная"].tap()
+        
+        let elementsQuery1 = app.scrollViews.otherElements.scrollViews.otherElements
+        XCTAssertTrue(elementsQuery1.staticTexts["10:00 пн, 22 июня"].exists)
+        XCTAssertTrue(elementsQuery1.staticTexts["15:00 чт, 25 июня"].exists)
+        XCTAssertTrue(elementsQuery1.staticTexts["Петр Трифонов"].exists)
+        XCTAssertTrue(elementsQuery1.staticTexts["Александр Павлов"].exists)
+    }
+    
+    func testActiveAppointmentButton() throws {
+        let app = XCUIApplication()
+        app.launch()
+        app.tabBars.buttons["Запись на приём"].tap()
+
+        let elementsQuery = app.tables/*@START_MENU_TOKEN@*/.scrollViews/*[[".cells.scrollViews",".scrollViews"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.otherElements
+        elementsQuery.buttons["Петр Трифонов"].tap()
+        
+        let elementsQuery2 = app.scrollViews.otherElements
+
+        XCTAssertFalse(elementsQuery2.buttons["Записаться на прием"].isEnabled)
+
+        elementsQuery2.buttons["21.06"].tap()
+        XCTAssertFalse(elementsQuery2.buttons["Записаться на прием"].isEnabled)
+
+        elementsQuery2.buttons["16:00"].tap()
+
+        XCTAssertTrue(elementsQuery2.buttons["Записаться на прием"].isEnabled)
+        app.navigationBars.buttons["Запись на приём"].tap()
+
+        elementsQuery.buttons["Анна Трифонова"].tap()
+        elementsQuery2.buttons["27.06"].tap()
+        XCTAssertFalse(elementsQuery2.buttons["Записаться на прием"].isEnabled)
+        
+        elementsQuery2.buttons["10:00"].tap()
+        XCTAssertTrue(elementsQuery2.buttons["Записаться на прием"].isEnabled)
+        
+        XCUIApplication().scrollViews.otherElements.buttons["28.06"].tap()
+        XCTAssertFalse(elementsQuery2.buttons["Записаться на прием"].isEnabled)
+    }
+    
 }

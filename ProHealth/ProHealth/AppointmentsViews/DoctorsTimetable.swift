@@ -85,6 +85,6 @@ struct DoctorsTimetable_Previews: PreviewProvider {
 func makeDate(month: Int, day: Int, hr: Int, min: Int) -> Date {
     var calendar = Calendar(identifier: .gregorian)
     let components = DateComponents(year: 2020, month: month, day: day, hour: hr, minute: min)
-    calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+//    calendar.timeZone = TimeZone(secondsFromGMT: 0)!
     return calendar.date(from: components)!
 }
