@@ -45,11 +45,11 @@ struct OrderView: View {
                 }
                 .padding(.horizontal)
                 .padding(.bottom)
-                AddressesView(selected: $selectedAdress, userAddresses: $userAddresses)
+                AddressesView(selected: $selectedAdress).environmentObject(userData)
                 
                 Button(action: {
                     self.order.status = OrderStatus.placed
-                    self.order.address = self.userAddresses[self.selectedAdress]
+                    self.order.address = self.userAddresses.first(where: {$0.id == self.selectedAdress})
                     self.userData.orders.append(self.order)
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
@@ -71,7 +71,6 @@ struct OrderView: View {
 
 struct OrderView_Previews: PreviewProvider {
     static var previews: some View {
-        
-        OrderView(order: getOrder).environmentObject(UserData())
+        OrderView(order: getOrder).environmentObject(UserData(addresses: AddressData))
     }
 }

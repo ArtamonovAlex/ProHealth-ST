@@ -17,11 +17,13 @@ class UserData: ObservableObject {
     var avatar: String = ""
     @Published var orders: [Order] = []
     @Published var appointments: [Appointment] = []
+    @Published var addresses: [Address] = []
     
     init() {}
     
-    init(orders: [Order], appointments: [Appointment] = []) {
+    init(orders: [Order] = [], appointments: [Appointment] = [], addresses: [Address] = []) {
         self.orders = orders
         self.appointments = appointments
+        self.addresses = addresses
     }
 }

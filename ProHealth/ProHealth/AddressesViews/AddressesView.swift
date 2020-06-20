@@ -10,20 +10,13 @@ import SwiftUI
 
 struct AddressesView: View {
     @Binding var selected: Int
-    @Binding var userAddresses: [Address]
+    @EnvironmentObject var userData: UserData
     @State var isAddressCreationFormOpen = false
     
-    init(
-        selected: Binding<Int>,
-        userAddresses: Binding<[Address]>
-    ) {
-        self._selected = selected
-        self._userAddresses = userAddresses
-    }
     
     var body: some View {
         VStack {
-            RadioButtonGroup(items: $userAddresses, selectedId: $selected) { address in
+            RadioButtonGroup(items: $userData.addresses, selectedId: $selected) { address in
                 HStack {
                     VStack{
                         HStack {
@@ -36,6 +29,7 @@ struct AddressesView: View {
                         Text("\(address.fullAddress)")
                             .padding(.horizontal)
                             .foregroundColor(.primary)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
                     Spacer()
                 }
@@ -47,7 +41,7 @@ struct AddressesView: View {
                 Image(systemName: "plus.circle")
                     .font(.system(size: 28))
                     .foregroundColor(Color("pink"))
-                    .padding(22)
+                    .padding(.bottom)
             }
         }
         .cornerRadius(20)
@@ -57,7 +51,7 @@ struct AddressesView: View {
         )
             .sheet(isPresented: $isAddressCreationFormOpen) {
                 CreateAddressView(callback: {address in
-                    self.userAddresses.append(address)
+                    self.userData.addresses.append(address)
                 })
         }
     }
@@ -65,7 +59,7 @@ struct AddressesView: View {
 
 struct AdressesView_Previews: PreviewProvider {
     static var previews: some View {
-        AddressesView(selected: .constant(1), userAddresses: .constant(AddressData))
+        AddressesView(selected: .constant(1)).environmentObject(UserData(addresses: AddressData))
     }
 }
 
@@ -111,15 +105,11 @@ struct RadioButtonGroup<Content: View>: View {
     let content: (Address) -> Content
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 0) {
             ForEach(items, id: \.id) { item in
-                VStack {
-                    Spacer().frame(height: 0)
                     RadioButton(item.id, selectedID: self.$selectedId) {
                         self.content(item)
                     }
-                    Spacer().frame(height: 0)
-                }
             }
         }
     }
