@@ -15,6 +15,7 @@
 		0FA74046249D07E600C59862 /* HStackWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA74045249D07E600C59862 /* HStackWrap.swift */; };
 		AE23D4DA248845AF004BE904 /* MedicineDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23D4D9248845AF004BE904 /* MedicineDetail.swift */; };
 		AE46DC3B249D2085006181F7 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE46DC3A249D2085006181F7 /* UserData.swift */; };
+		AE46DC43249D7C5F006181F7 /* ProHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE46DC42249D7C5F006181F7 /* ProHealthUITests.swift */; };
 		AE5C12232484671F00B888B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12222484671F00B888B0 /* AppDelegate.swift */; };
 		AE5C12252484671F00B888B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12242484671F00B888B0 /* SceneDelegate.swift */; };
 		AE5C12272484671F00B888B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12262484671F00B888B0 /* ContentView.swift */; };
@@ -37,6 +38,16 @@
 		AED832112485CFA5001C1884 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED832102485CFA5001C1884 /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AE46DC45249D7C5F006181F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE5C12172484671E00B888B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE5C121E2484671E00B888B0;
+			remoteInfo = ProHealth;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0F500AEC248F8F0D006845DF /* DoctorsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsDetail.swift; sourceTree = "<group>"; };
 		0F500AEF248F9381006845DF /* DoctorsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsRow.swift; sourceTree = "<group>"; };
@@ -46,6 +57,9 @@
 		0FA74045249D07E600C59862 /* HStackWrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackWrap.swift; sourceTree = "<group>"; };
 		AE23D4D9248845AF004BE904 /* MedicineDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDetail.swift; sourceTree = "<group>"; };
 		AE46DC3A249D2085006181F7 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		AE46DC40249D7C5F006181F7 /* ProHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE46DC42249D7C5F006181F7 /* ProHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProHealthUITests.swift; sourceTree = "<group>"; };
+		AE46DC44249D7C5F006181F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5C121F2484671F00B888B0 /* ProHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5C12222484671F00B888B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE5C12242484671F00B888B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +85,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AE46DC3D249D7C5F006181F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE5C121C2484671E00B888B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,10 +113,20 @@
 			path = AppointmentsViews;
 			sourceTree = "<group>";
 		};
+		AE46DC41249D7C5F006181F7 /* ProHealthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE46DC42249D7C5F006181F7 /* ProHealthUITests.swift */,
+				AE46DC44249D7C5F006181F7 /* Info.plist */,
+			);
+			path = ProHealthUITests;
+			sourceTree = "<group>";
+		};
 		AE5C12162484671E00B888B0 = {
 			isa = PBXGroup;
 			children = (
 				AE5C12212484671F00B888B0 /* ProHealth */,
+				AE46DC41249D7C5F006181F7 /* ProHealthUITests */,
 				AE5C12202484671F00B888B0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				AE5C121F2484671F00B888B0 /* ProHealth.app */,
+				AE46DC40249D7C5F006181F7 /* ProHealthUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +224,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AE46DC3F249D7C5F006181F7 /* ProHealthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE46DC49249D7C5F006181F7 /* Build configuration list for PBXNativeTarget "ProHealthUITests" */;
+			buildPhases = (
+				AE46DC3C249D7C5F006181F7 /* Sources */,
+				AE46DC3D249D7C5F006181F7 /* Frameworks */,
+				AE46DC3E249D7C5F006181F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE46DC46249D7C5F006181F7 /* PBXTargetDependency */,
+			);
+			name = ProHealthUITests;
+			productName = ProHealthUITests;
+			productReference = AE46DC40249D7C5F006181F7 /* ProHealthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		AE5C121E2484671E00B888B0 /* ProHealth */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE5C12332484672000B888B0 /* Build configuration list for PBXNativeTarget "ProHealth" */;
@@ -219,6 +269,10 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Aleksandr Artamonov";
 				TargetAttributes = {
+					AE46DC3F249D7C5F006181F7 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = AE5C121E2484671E00B888B0;
+					};
 					AE5C121E2484671E00B888B0 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -238,11 +292,19 @@
 			projectRoot = "";
 			targets = (
 				AE5C121E2484671E00B888B0 /* ProHealth */,
+				AE46DC3F249D7C5F006181F7 /* ProHealthUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AE46DC3E249D7C5F006181F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE5C121D2484671E00B888B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,6 +321,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AE46DC3C249D7C5F006181F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE46DC43249D7C5F006181F7 /* ProHealthUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE5C121B2484671E00B888B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +360,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AE46DC46249D7C5F006181F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE5C121E2484671E00B888B0 /* ProHealth */;
+			targetProxy = AE46DC45249D7C5F006181F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		AE5C122D2484672000B888B0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -302,6 +380,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AE46DC47249D7C5F006181F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G2P3D2GNR;
+				INFOPLIST_FILE = ProHealthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = artamonov.ProHealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProHealth;
+			};
+			name = Debug;
+		};
+		AE46DC48249D7C5F006181F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G2P3D2GNR;
+				INFOPLIST_FILE = ProHealthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = artamonov.ProHealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProHealth;
+			};
+			name = Release;
+		};
 		AE5C12312484672000B888B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -461,6 +577,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AE46DC49249D7C5F006181F7 /* Build configuration list for PBXNativeTarget "ProHealthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE46DC47249D7C5F006181F7 /* Debug */,
+				AE46DC48249D7C5F006181F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AE5C121A2484671E00B888B0 /* Build configuration list for PBXProject "ProHealth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

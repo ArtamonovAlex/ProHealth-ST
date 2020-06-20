@@ -28,7 +28,7 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "cart.fill")
                         .imageScale(.large)
-                    Text("Заказ лекартсв")
+                    Text("Заказ лекарств")
                 }
                 .tag(1)
             
