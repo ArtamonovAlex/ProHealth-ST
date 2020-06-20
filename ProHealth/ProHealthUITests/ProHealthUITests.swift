@@ -127,4 +127,33 @@ class ProHealthUITests: XCTestCase {
         XCTAssertFalse(elementsQuery2.buttons["Записаться на прием"].isEnabled)
     }
     
+    func testAddressCreation() throws {
+        let app = XCUIApplication()
+        app.launch()
+        app.tabBars.buttons["Заказ лекарств"].tap()
+        
+        app.buttons["bag"].tap()
+        
+        app.scrollViews.otherElements.buttons["plus.circle"].tap()
+        app.scrollViews.otherElements.buttons["plus.circle"].tap()
+        
+        app.pickerWheels["Санкт-Петербург"].adjust(toPickerWheelValue: "Самара")
+        
+        
+        app.textFields[" Улица"].tap()
+        app.textFields[" Улица"].typeText("Вольская")
+        app.textFields[" Строение/Дом"].tap()
+        app.textFields[" Строение/Дом"].typeText("83")
+        app.textFields[" Офис/Квартира"].tap()
+        app.textFields[" Офис/Квартира"].typeText("76")
+        app.textFields[" Название"].tap()
+        app.textFields[" Название"].typeText("Дом Самара")
+        XCUIApplication().keyboards.buttons["Return"].tap()
+        app.buttons["Сохранить адрес"].tap()
+        
+        XCTAssertTrue(app.scrollViews.otherElements.buttons["Дом Самара\nг. Самара, Вольская, д. 83, 76"].exists)
+        
+        
+    }
+    
 }
