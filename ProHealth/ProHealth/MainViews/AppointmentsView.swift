@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct AppointmentsView: View {
+    @EnvironmentObject var userData: UserData
+    
     let categories: [String: [Doctor]] = Dictionary(
             grouping: DoctorsData,
             by: { $0.category }
@@ -19,6 +21,7 @@ struct AppointmentsView: View {
             List{
                ForEach(categories.keys.sorted(), id: \.self) { key in
                     DoctorsRow(categoryName: key, items: self.categories[key]!)
+                        .environmentObject(self.userData)
                 .padding()
                 }
                 .listRowInsets(EdgeInsets())
@@ -30,6 +33,6 @@ struct AppointmentsView: View {
 
 struct AppointmentsView_Previews: PreviewProvider {
     static var previews: some View {
-        AppointmentsView()
+        AppointmentsView().environmentObject(UserData())
     }
 }

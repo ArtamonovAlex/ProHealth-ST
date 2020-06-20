@@ -16,6 +16,7 @@
 		AE23D4DA248845AF004BE904 /* MedicineDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23D4D9248845AF004BE904 /* MedicineDetail.swift */; };
 		AE46DC3B249D2085006181F7 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE46DC3A249D2085006181F7 /* UserData.swift */; };
 		AE46DC43249D7C5F006181F7 /* ProHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE46DC42249D7C5F006181F7 /* ProHealthUITests.swift */; };
+		AE46DC4B249DD8AB006181F7 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE46DC4A249DD8AB006181F7 /* Appointment.swift */; };
 		AE5C12232484671F00B888B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12222484671F00B888B0 /* AppDelegate.swift */; };
 		AE5C12252484671F00B888B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12242484671F00B888B0 /* SceneDelegate.swift */; };
 		AE5C12272484671F00B888B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C12262484671F00B888B0 /* ContentView.swift */; };
@@ -60,6 +61,7 @@
 		AE46DC40249D7C5F006181F7 /* ProHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE46DC42249D7C5F006181F7 /* ProHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProHealthUITests.swift; sourceTree = "<group>"; };
 		AE46DC44249D7C5F006181F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE46DC4A249DD8AB006181F7 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		AE5C121F2484671F00B888B0 /* ProHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5C12222484671F00B888B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE5C12242484671F00B888B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				0FA57F95248E45C400D3132A /* Doctor.swift */,
 				AEB6BD482498066C007FA5CA /* Address.swift */,
 				AE46DC3A249D2085006181F7 /* UserData.swift */,
+				AE46DC4A249DD8AB006181F7 /* Appointment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				AE5C12232484671F00B888B0 /* AppDelegate.swift in Sources */,
 				0FA74044249CEA5800C59862 /* DoctorsTimetable.swift in Sources */,
 				AE8EF9C8248471CE001AC224 /* MedicineOrderView.swift in Sources */,
+				AE46DC4B249DD8AB006181F7 /* Appointment.swift in Sources */,
 				0FA57F96248E45C400D3132A /* Doctor.swift in Sources */,
 				AEB6BD492498066C007FA5CA /* Address.swift in Sources */,
 				AED8320D2485CEAA001C1884 /* Order.swift in Sources */,

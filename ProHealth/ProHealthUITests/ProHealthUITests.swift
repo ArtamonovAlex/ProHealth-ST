@@ -69,7 +69,5 @@ class ProHealthUITests: XCTestCase {
         app.tabBars.buttons["Главная"].tap()
         XCTAssertTrue(elementsQuery.scrollViews.otherElements.buttons.element.label.hasPrefix("Заказ"))
         XCTAssertTrue(elementsQuery.scrollViews.otherElements.buttons.element.label.hasSuffix("Бепантен x6"))
-        
-                
     }
 }

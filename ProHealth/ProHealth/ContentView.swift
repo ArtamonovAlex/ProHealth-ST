@@ -33,6 +33,7 @@ struct ContentView: View {
                 .tag(1)
             
             AppointmentsView()
+                .environmentObject(userData)
                 .tabItem {
                     Image(systemName: "waveform.path.ecg")
                         .imageScale(.large)
